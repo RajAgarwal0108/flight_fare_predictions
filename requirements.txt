@@ -1,0 +1,9 @@
+pymongo
+python-decouple
+pandas
+numpy
+typing
+flask
+openpyxl
+# -e .
+

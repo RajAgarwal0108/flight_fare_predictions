@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/main.css">
+    <title>Flight Fare Prediction</title>
+</head>
+<body>
+
+    
+    <form action="/predict" , method="post">
+        
+        <div class="container">
+
+            <div class="header">
+                <h1>Flight Fare Prediction</h1>
+            </div>
+
+
+            <div class="input" >
+                <div class="info" aria-required="true">
+                    <label for="Airline">  Airways </label>
+
+                    <div class="vals">
+
+                        <select  name="Airline" id="Airline">
+                        {% for i in airways %}
+                            <option > {{ i }} </option>
+                        {% endfor %}
+                        </select>
+
+                     </div>
+
+                </div>                    
+                
+               
+                <div class="info">
+                    <label for="Date_of_Journey"> Date_of_Journey</label>
+                    <div class="vals">
+                    <input type="date" id="date" name = "date" required>
+                    </div>
+                    <br>
+                </div>
+
+               <div class="info">
+                <label for="Source">  Source </label>
+                <div class="vals">
+                <select name="Source" id="Source">
+                    {% for i in source %}
+                        <option > {{ i }} </option>
+                    {% endfor %}
+                    
+                </select>
+                </div>
+               </div>
+                
+               <div class="info">
+                <label for="Destination">  Destination </label>
+                <div class="vals">
+                <select name="Destination" id="Destination">
+                    {% for i in destination %}
+                        <option > {{ i }} </option>
+                    {% endfor %}
+                    
+                </select>
+                </div>
+               </div>
+              
+
+                <div class="info">
+                    <label for="Dep_time"> Departure Time</label>
+                    <div class="vals">
+                <input type="time" id="dep_time" name = "dep_time" required>
+                        </div>
+                </div>
+
+               
+
+            
+
+               <div class="info">
+                <label for="Arr_time"> Arrival Time</label>
+                <div class="vals">
+                <input type="time" id="arr_time" name = "arr_time" required>
+                </div>
+             
+               </div>
+
+             
+
+              
+
+               <div class="info">
+                <label for="Duration"> Duration</label>
+                <div class="vals">
+                <input type="number" id="duration" name = "duration" required>
+                </div>
+               </div>
+
+              
+           
+            
+
+               <div class="info">
+                <label for="Total_Stops"> Total_Stops </label>
+                <div class="vals">
+                <select name="Total_Stops" id="Total_Stops">
+                    {% for i in stops %}
+                        <option > {{ i }} </option>
+                    {% endfor %}
+                    
+                </select>
+                </div>
+
+               </div>
+            </div>
+
+            
+            <div class="button">
+               <input type="submit" name="predict" id="predict" value="predict">
+            </div>
+        </div>
+    </form>
+ 
+
+   
+    
+</body>
+</html>
