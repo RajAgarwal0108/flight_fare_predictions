@@ -5,5 +5,7 @@ numpy
 typing
 flask
 openpyxl
+scikit-learn
+
 # -e .
 

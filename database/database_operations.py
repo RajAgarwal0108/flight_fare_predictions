@@ -8,12 +8,27 @@ import sys
 
 class Database_Operations:
 
+    """
+        Class Name : Database_operations
+        Description : contains all database operations, inserting pandas dataframe into mongoDB
+                        retriving data from datav=base into csv format
+    """
+
+    logging.info('entered into database operations')
+
     def __init__(self,client):
         self.client = client
         
         
 
     def insert_pandas_dataframe(self,database_name,collection_name,dataframe):
+
+        """
+            name : insert_pandas_dataframe
+            Description : insert data from pandas DataFrame into mongoDB Database
+        """
+
+        logging.info("inserting pandas dataframe into mongoDB")
 
         try:
             db = self.client[database_name]
@@ -27,6 +42,13 @@ class Database_Operations:
 
 
     def retrieve_to_csv(self,database_name,collection_name,file_path):
+
+        """
+         Name: retrieve_to_csv
+         Description : retrive data from monogoDB in json format and saving in csv file
+        """
+
+        logging.info("retrieving data from database into csv format")
         try:
             db = self.client[database_name]
             collection = db[collection_name]
