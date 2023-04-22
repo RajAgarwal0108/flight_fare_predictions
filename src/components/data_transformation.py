@@ -32,7 +32,9 @@ class Data_Transformation:
             print(processed_data.columns)
         
 
-            X_train,X_test,y_train,y_test = train_test_split(processed_data,target_feature,test_size=0.2,random_state=42)
+            X_train,X_test,y_train,y_test = train_test_split(processed_data,target_feature,test_size=0.3,random_state=42)
+            print("............................................")
+            
 
             
             X_train_Scaled = scalerTransform().scaler(X_train)
@@ -44,8 +46,8 @@ class Data_Transformation:
 
 
             return(
-                X_train,
-                X_test,
+                X_train_Scaled,
+                X_test_Scaled,
                 y_train,
                 y_test
             )

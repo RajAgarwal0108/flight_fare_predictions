@@ -5,6 +5,7 @@ import pickle
 import datetime as dt
 
 from sklearn.preprocessing import StandardScaler
+from src.utils import save_object
 
 from src.exceptions import CustomException
 from src.logger import logging
@@ -92,15 +93,14 @@ class scalerTransform:
             sc = StandardScaler()
             x = sc.fit_transform(X)
 
-            with open(self.scaler_path,'wb') as f:
-                pickle.dump(sc,f)
+            save_object(file_path=self.scaler_path,obj=sc)
 
             return(x)
 
 
 
         except Exception as e:
-            raise CustomException(e.sys)
+            raise CustomException(e,sys)
         
 
 

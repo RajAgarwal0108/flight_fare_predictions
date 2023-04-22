@@ -43,8 +43,8 @@ class ModelTrainer:
                 "Random Forest": RandomForestRegressor(n_jobs=-1),
                 "Decision Tree": DecisionTreeRegressor(),
                 "Gradient Boosting": GradientBoostingRegressor(),
+                "XGBRegressor":XGBRegressor(),
                 "Linear Regression": LinearRegression(n_jobs=-1),
-                "XGBRegressor": XGBRegressor(),
                 "AdaBoost Regressor": AdaBoostRegressor(),
             }
 
@@ -82,7 +82,7 @@ class ModelTrainer:
             }
 
             model_report : dict = evaluate_models(
-                X_train = X_train,y_train=y_train,X_test = X_test,y_test=y_test,models = models,param = params)
+                X_train = X_train,y_train=y_train,X_test = X_test,y_test=y_test,models = models)
 
             best_model_score = max(sorted(model_report.values()))
 
@@ -91,6 +91,7 @@ class ModelTrainer:
             ]
 
             best_model = models[best_model_name]
+            print(best_model)
 
             if best_model_score < 0.6:
                 raise CustomException("No best model found")
