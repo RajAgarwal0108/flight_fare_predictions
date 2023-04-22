@@ -6,6 +6,7 @@ typing
 flask
 openpyxl
 scikit-learn
-
+xgboost
+dill
 # -e .
 
