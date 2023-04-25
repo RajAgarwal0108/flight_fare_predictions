@@ -37,9 +37,26 @@
                 
                
                 <div class="info">
+                    <script>
+                        date = new Date();
+                        year = date.getFullYear();
+                        month = date.getMonth() + 1;
+                        day = date.getDate();
+                        document.getElementById("date").innerHTML = year+'/'+month+'/'+day;
+                        // document.getElementById("firstDateId").onchange = function () {
+                        // var input = document.getElementById("secondDateId");
+                        // input.setAttribute("min", this.value);
+                    // }
+
+
+                    </script>
+
+
+
+
                     <label for="Date_of_Journey"> Date_of_Journey</label>
                     <div class="vals">
-                    <input type="date" id="date" name = "date" required>
+                    <input type="date" id="date" name = "date"  required pattern="\d{2}-\d{2}-\d{4}" required>
                     </div>
                     <br>
                 </div>
@@ -67,12 +84,12 @@
                 </select>
                 </div>
                </div>
-              
 
+              
                 <div class="info">
                     <label for="Dep_time"> Departure Time</label>
                     <div class="vals">
-                <input type="time" id="dep_time" name = "dep_time" required>
+                <input type="time" id="dep_time" name = "dep_time" min="00:00" value="13:13" max="23:59" required>
                         </div>
                 </div>
 
@@ -92,12 +109,7 @@
 
               
 
-               <div class="info">
-                <label for="Duration"> Duration</label>
-                <div class="vals">
-                <input type="number" id="duration" name = "duration" required>
-                </div>
-               </div>
+              
 
               
            

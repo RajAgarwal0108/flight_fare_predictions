@@ -112,11 +112,11 @@ class ModelTrainer:
             raise CustomException(e,sys)
 
 
-if __name__ == '__main__':
-    model = ModelTrainer()
+# if __name__ == '__main__':
+#     model = ModelTrainer()
 
 
-    X_train,X_test,y_train,y_test = Data_Transformation().Initaite_Data_Transformation()
-    print(model.initiate_model_training(X_train,X_test,y_train,y_test))
+#     X_train,X_test,y_train,y_test = Data_Transformation().Initaite_Data_Transformation()
+#     print(model.initiate_model_training(X_train,X_test,y_train,y_test))
 
         
