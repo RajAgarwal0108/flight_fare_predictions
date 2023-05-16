@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/Users/rajagarwal/Documents/Ineuron_Project/Flight_Fare_Predictions/venv"
+VIRTUAL_ENV="/Users/rajagarwal/Documents/Ineuron_Project/flight_fare_predictions/venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

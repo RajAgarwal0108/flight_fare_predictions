@@ -2,6 +2,7 @@ pymongo
 python-decouple
 pandas
 numpy
+setuptools
 typing
 flask
 openpyxl
