@@ -1,4 +1,4 @@
-#!/Users/rajagarwal/Documents/Ineuron_Project/Flight_Fare_Predictions/venv/bin/python3.10
+#!/Users/rajagarwal/Documents/Ineuron_Project/flight_fare_predictions/venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
