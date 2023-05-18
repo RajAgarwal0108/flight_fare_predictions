@@ -1,0 +1,12 @@
+[ 2023-05-18 20:16:40,883 ] 16 INFO Entered Preprocessing class...
+[ 2023-05-18 20:16:40,883 ] 105 INFO entered scalerTransform class ..
+[ 2023-05-18 20:16:40,883 ] 11 INFO entered Predict Pipeline
+[ 2023-05-18 20:16:40,889 ] 224 WARNING  * Debugger is active!
+[ 2023-05-18 20:16:40,896 ] 224 INFO  * Debugger PIN: 471-531-392
+[ 2023-05-18 20:17:01,206 ] 224 INFO 127.0.0.1 - - [18/May/2023 20:17:01] "GET / HTTP/1.1" 200 -
+[ 2023-05-18 20:17:01,238 ] 224 INFO 127.0.0.1 - - [18/May/2023 20:17:01] "GET /static/main.css HTTP/1.1" 200 -
+[ 2023-05-18 20:17:01,477 ] 224 INFO 127.0.0.1 - - [18/May/2023 20:17:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[ 2023-05-18 20:17:01,524 ] 224 INFO 127.0.0.1 - - [18/May/2023 20:17:01] "[33mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 404 -
+[ 2023-05-18 20:17:01,527 ] 224 INFO 127.0.0.1 - - [18/May/2023 20:17:01] "[33mGET /apple-touch-icon.png HTTP/1.1[0m" 404 -
+[ 2023-05-18 20:17:02,722 ] 224 INFO 127.0.0.1 - - [18/May/2023 20:17:02] "GET / HTTP/1.1" 200 -
+[ 2023-05-18 20:17:02,736 ] 224 INFO 127.0.0.1 - - [18/May/2023 20:17:02] "[36mGET /static/main.css HTTP/1.1[0m" 304 -

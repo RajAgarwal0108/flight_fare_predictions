@@ -1,0 +1,7 @@
+[ 2023-05-18 20:59:35,424 ] 16 INFO Entered Preprocessing class...
+[ 2023-05-18 20:59:35,424 ] 105 INFO entered scalerTransform class ..
+[ 2023-05-18 20:59:35,424 ] 11 INFO entered Predict Pipeline
+[ 2023-05-18 20:59:35,432 ] 224 WARNING  * Debugger is active!
+[ 2023-05-18 20:59:35,439 ] 224 INFO  * Debugger PIN: 471-531-392
+[ 2023-05-18 20:59:41,514 ] 224 INFO 127.0.0.1 - - [18/May/2023 20:59:41] "GET / HTTP/1.1" 200 -
+[ 2023-05-18 20:59:41,532 ] 224 INFO 127.0.0.1 - - [18/May/2023 20:59:41] "[36mGET /static/main.css HTTP/1.1[0m" 304 -

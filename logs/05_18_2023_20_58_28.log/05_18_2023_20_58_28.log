@@ -1,0 +1,11 @@
+[ 2023-05-18 20:58:28,713 ] 16 INFO Entered Preprocessing class...
+[ 2023-05-18 20:58:28,713 ] 105 INFO entered scalerTransform class ..
+[ 2023-05-18 20:58:28,713 ] 11 INFO entered Predict Pipeline
+[ 2023-05-18 20:58:28,722 ] 224 WARNING  * Debugger is active!
+[ 2023-05-18 20:58:28,729 ] 224 INFO  * Debugger PIN: 471-531-392
+[ 2023-05-18 20:58:37,669 ] 224 INFO 127.0.0.1 - - [18/May/2023 20:58:37] "GET / HTTP/1.1" 200 -
+[ 2023-05-18 20:58:37,688 ] 224 INFO 127.0.0.1 - - [18/May/2023 20:58:37] "GET /static/main.css HTTP/1.1" 200 -
+[ 2023-05-18 20:58:38,076 ] 224 INFO 127.0.0.1 - - [18/May/2023 20:58:38] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[ 2023-05-18 20:58:38,103 ] 224 INFO 127.0.0.1 - - [18/May/2023 20:58:38] "[33mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 404 -
+[ 2023-05-18 20:58:38,107 ] 224 INFO 127.0.0.1 - - [18/May/2023 20:58:38] "[33mGET /apple-touch-icon.png HTTP/1.1[0m" 404 -
+[ 2023-05-18 20:58:50,706 ] 224 INFO  * Detected change in '/Users/rajagarwal/Documents/Ineuron_Project/Flight_Fare_Predictions/application.py', reloading
