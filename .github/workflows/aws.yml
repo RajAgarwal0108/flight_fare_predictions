@@ -96,3 +96,6 @@ jobs:
       - name: Clean previous images and containers
         run: |
          docker system prune -f
+      - name: add run on
+        run: |
+         runs-on: self-hosted
